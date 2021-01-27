@@ -10,6 +10,107 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
+    <section class="wrapper">
+      <div class="inner">
+        <div class="form-container">
+          <h1 class="form-title">アカウント作成</h1>
+          <div class="form-subscribe">
+            <div class="halfWidth">
+              <a class="button facebook-color" href="#">Facebookでスタート</a>
+            </div>
+            <div class="halfWidth">
+              <a class="button google-color" href="#">Googleでスタート</a>
+            </div>
+          </div>
+          <p class="form-text subText">
+            タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。
+          </p>
+          <div class="relative-box">
+            <p class="form-text form-text_position subText">アカウント情報</p>
+          </div>
+          <form action="">
+            <div class="name-box row">
+              <div class="halfWidth">
+                <p class="labelFont">名字<span class="red"> ※</span></p>
+                <input type="text" name="last_name" class="inputArea" required>
+              </div>
+              <div class="halfWidth">
+                <p class="labelFont">名前<span class="red"> ※</span></p>
+                <input type="text" name="first_name" class="inputArea" required>
+              </div>
+            </div>
+            <div class="gender-box row">
+              <p class="labelFont">性別</p>
+              <div class="gender-contents">
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="male" class="gender-input"><span>男性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="female" class="gender-input"><span>女性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="other" class="gender-input"><span>その他</span>
+                </label>
+              </div>
+            </div>
+            <div class="origin-box halfWidth row">
+              <p class="labelFont">出身</p>
+              <div class="select-area">
+                <select name="origin" id="origin" class="inputArea">
+                  <option value="tokyo">東京</option>
+                  <option value="chiba">千葉</option>
+                  <option value="saitama">埼玉</option>
+                  <option value="kanagawa">神奈川</option>
+                  </select>
+              </div>
+            </div>
+            <div class="email-box row">
+              <p class="labelFont">Eメール<span class="red"> ※</span></p>
+              <input type="email" name="email" class="inputArea" placeholder="ex) hoge@example.com" required>
+            </div>
+            <div class="tel-box row">
+              <p class="labelFont">電話番号</p>
+              <input type="tel" name="tel-number" class="inputArea" placeholder="ex) 09012345678">
+            </div>
+            <div class="password-box row">
+              <p class="labelFont">パスワード<span class="red"> ※</span></p>
+              <input type="password" name="password" class="inputArea" required>
+            </div>
+            <div class="password-box row">
+              <p class="labelFont">パスワード(確認用)<span class="red"> ※</span></p>
+              <input type="password" name="password-confirm" class="inputArea" required>
+            </div>
+            <div class="course-boxro row">
+              <p class="labelFont">希望コース</p>
+              <div class="course-contents">
+                <label class="course-content">
+                  <input type="checkbox" name="front-end"><span>フロントエンド</span>
+                </label>
+                <label class="course-content">
+                  <input type="checkbox" name="back-end"><span>バックエンド</span>
+                </label>
+                <label class="course-content">
+                  <input type="checkbox" name="app"><span>アプリ</span>
+                </label>
+              </div>
+            </div>
+            <div class="remarks-box row">
+              <p class="labelFont">備考</p>
+              <textarea type="text" name="remark" class="inputArea remarks-area" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <div class="register-box row">
+              <input type="submit" value="アカウント作成" class="register-btn button">
+            </div>
+            <p class="agreement-text">
+              アカウントを作成することにより、<a href="#" class="link-color">利用規約</a>と<a href="#" class="link-color">プライバシーポリシー</a>に同意するものとします。
+            </p>
+          </form>
+        </div>
+        <div class="foot-text">
+          <p>すでにアカウントをお持ちですか？ <a class="link-color" href="#">ログイン</a></p>
+          <a class="resend-mail link-color">認証メールが届きませんか？</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
